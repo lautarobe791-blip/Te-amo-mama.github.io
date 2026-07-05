@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Geología | Lautaro Elias Brandan</title>
+    <style>
+        /* Estilos Generales */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e67e22;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+        
+        /* Cabecera / Hero Section */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+        header h1 {
+            color: white;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Sección de Proyectos (Grilla) */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .project-card {
+    display: block; /* Asegura que toda la tarjeta sea cliqueable */
+    color: inherit; /* Mantiene el color de texto original */
+    text-decoration: none; /* Elimina el subrayado azul de los enlaces */
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd; /* Color de fondo si no hay imagen */
+            object-fit: cover;
+            display: block;
+        }
+        .project-info {
+            padding: 1.5rem;
+        }
+        .project-info h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        .tag {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            font-size: 0.8rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            margin-bottom: 1rem;
+        }
+
+        /* Pie de página / Contacto */
+        footer {
+            background-color: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+        }
+        footer h2 {
+            color: white;
+            margin-top: 0;
+        }
+        .contact-info {
+            margin: 2rem 0;
+            font-size: 1.1rem;
+        }
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Griselda Beatriz Baez</h1>
+        <p>Portafolio de Geología</p>
+    </header>
+
+    <div class="container">
+        <h2>Proyectos e Investigaciones</h2>
+        <p>Selección de trabajos realizados en QGIS y análisis de terreno orientados al sector minero.</p>
+
+       	<div class="portfolio-grid">
+    	<a href="analisis-deseado.html" class="project-card">
+        	<img src="QGIS-1.jpg" alt="Mapa QGIS Macizo del Deseado" class="project-image">
+        	<div class="project-info">
+            	<span class="tag">QGIS / Mapeo</span>
+            	<h3>Análisis Espacial - Macizo del Deseado</h3>
+            	<p>Modelado de datos espaciales y generación de cartografía temática para la identificación de zonas de interés geológico.</p>
+        	</div>
+    	</a>
+
+    	<a href="investigacion-rio-turbio.html" class="project-card">
+        	<img src="rioTurbio.jpeg" alt="Investigación Río Turbio" class="project-image">
+        	<div class="project-info">
+            	<span class="tag">Investigación</span>
+            	<h3>Operaciones Mineras de Carbón en Río Turbio</h3>
+            	<p>Reporte histórico y análisis técnico sobre las operaciones de extracción, infraestructura y protocolos de seguridad en la cuenca carbonífera.</p>
+        	</div>
+    	</a>
+
+    	<a href="levantamiento-campo.html" class="project-card">
+        	<img src="trabajoCampo.jpeg" alt="Trabajo de campo" class="project-image">
+        	<div class="project-info">
+        	    <span class="tag">Campo / Topografía</span>
+            	<h3>Levantamiento Geológico</h3>
+            	<p>Documentación fotográfica y muestreo de terreno para el análisis estructural preliminar en zonas de prospección.</p>
+        	</div>
+    	</a>
+	</div>
+    </div>
+
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <p>Disponible para oportunidades en el sector minero.</p>
+        <div class="contact-info">
+            <p>📧 Correo: griseldabaez1983.b@gmail.com</p>
+<a href="mailto:griseldabaez1983.b@gmail.com" style="text-decoration: none; color: inherit;">Envíame un correo</a>
+
+	    <p >📱 Teléfono: +54 1126655367</p>
+<a href="https://wa.me/541126655367" style="text-decoration: none; color: inherit;" >Envíame un Whatsapp</a>
+
+            <p>📍 Ubicación: Puerto Deseado,Santa Cruz, Argentina</p>
+        </div>
+    </footer>
+
+</body>
+</html>
